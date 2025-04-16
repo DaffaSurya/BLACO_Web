@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="Style.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>BLACO Coffe</title>
+   
+</head>
+<body>
+    <div>
+        <header class="bg-white">
+            <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+              <div class="flex h-17 items-center justify-between">
+                <div class="flex-1 md:flex md:items-center md:gap-12">
+                  <a class="block text-teal-600" href="#">
+                   <img src="BLACO.png" alt="" class="Logo-Blaco">
+                  </a>
+                </div>
+          
+                <!-- menu untuk desktop dan -->
+                <div class="md:flex md:items-center md:gap-12">
+                  <nav aria-label="Global" class="hidden md:block">
+                    <ul class="ul-navbar">
+                      <li>
+                        <a class="text-black-600 transition hover:text-gray-500/75" href="#"> Home </a>
+                      </li>
+          
+                      <li>
+                        <a class="text-black-600 transition hover:text-gray-500/75" href="#"> About</a>
+                      </li>
+          
+                      <li>
+                        <a class="text-black-600 transition hover:text-gray-500/75" href="#"> Best Value </a>
+                      </li>
+          
+                      <li>
+                        <a class="text-black-600 transition hover:text-gray-500/75" href="#"> Contact Me </a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                  <!-- menu untuk Responsive hp -->
+                  <select name="menu" id="menu" class="select-menu">
+                    <option value="Home">Home</option>
+                    <option value="About me">About me</option>
+                    <option value="Best Value">Best Value</option>
+                    <option value="Contact Me">Contact Me</option>
+                  </select>
+               <!-- menu untuk Responsive hp -->
+
+                  <a
+                  class="inline-block text-23 rounded-sm bg-yellow-600 px-5 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+                  href="#"
+                >
+                 Sign Up
+                </a>
+                
+                </div>
+              </div>
+            </div>
+          </header>
+
+      <!-- Banner -->
+        <div class="div-banner">
+          <div class="box-banner">
+          <p class="p-title">Seteguk kopi ,  Sejuta Inspirasi</p>
+
+          <p class="p-caption-banner">"Dari obrolan ringan hingga diskusi panjang, semua dimulai dengan secangkir kopi."</p>
+          <button class="button-banner">
+            Get Started
+          </button>
+          <div data-aos="fade-up">
+          <img src="barista.jpeg" class="banner-content">
+          </div>
+          <p class="caption-banner2"> "Makna sebuah Obrolan tidak dapat diukur dari berapa harga kopi yang dibeli"</p>
+          <img src="https://i.pinimg.com/736x/58/cc/84/58cc84acb39acfd0475905992606d2ee.jpg" class="img-profil">
+          <p class="p-captionprofil">Ester Lee </p>
+        </div>
+        </div>
+      <!-- Banner end -->
+
+      <!-- double content  -->
+        <div class="div-content2">
+         <div class="double-content1">
+            <div class="box-content1" data-aos="fade-right">
+                <p class="p-title-doublecontent">Ada Cerita apa hari ini? </p>
+                <p class="p-caption-doublecontent">Dirimu yang sebenarnya adalah apa yang kamu lakukan saat orang lain tidak melihatmu </p>
+                <p class="p-caption2-doublecontent">"Ngopi Sendirian bukan kesepian , melainkan waktu diri sendiri untuk instropeksi"</p>
+            </div>
+         </div>
+
+         <div class="double-contentimage">
+            <div class="box-content2" data-aos="fade-right">
+              <img src="kopiview.jpeg" class="img1-content">
+              <img src="Barista2.jpeg" class="img2-content">
+            </div>
+         </div>
+        </div>
+      <!-- double content end-->
+
+      <!-- card Content -->
+
+      <div class="div-card-container">
+        <section>
+          <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+            <header class="text-center">
+              <h2 class="text-xl font-bold text-white sm:text-3xl">Best Recommend</h2>
+        
+              <p class="mx-auto mt-4 max-w-md text-white">
+                Beberapa menu rekomendasi yang Tersedia di BLACO Coffe siap menemani hari - harimu..
+              </p>
+            </header>
+        
+            <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <li>
+                <a href="#" class="group relative block overflow-hidden">
+                  <button
+                    class="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
+                  >
+                    <span class="sr-only">Wishlist</span>
+                
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </button>
+                
+                  <img
+                    src="https://i.pinimg.com/736x/16/fd/bd/16fdbd2415a942ccbb5b8c9a26a4bf6c.jpg"
+                    alt=""
+                    class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+                  />
+                
+                  <div class="relative border border-gray-100 p-6" style="background-color:  #F5E0C3;">
+                    <span class="text-white px-3 py-1.5 text-xs font-medium whitespace-nowrap"  style="background-color: #C68E17;"> Recomend </span>
+                
+                    <h3 class="mt-4 text-lg font-medium text-brown" style="color: #4B2E2E;">Senja Cappucino</h3>
+                
+                    <p class="mt-1.5 text-sm text-gray-700" style=" color: #4B2E2E;">Rp 19.000</p>
+                
+                    <form class="mt-4">
+                      <button
+                        class="block w-full rounded-sm p-4 text-sm font-medium transition hover:scale-105 text-white" style="background-color: #C68E17;"
+                      >
+                        Add to Cart
+                      </button>
+                    </form>
+                  </div>
+                </a>
+              </li>
+        
+              <li>
+                <a href="#" class="group relative block overflow-hidden">
+                  <button
+                    class="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
+                  >
+                    <span class="sr-only">Wishlist</span>
+                
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </button>
+                
+                  <img
+                    src="https://i.pinimg.com/736x/da/1c/f5/da1cf52f55b7b4adcac8dbff75a7a223.jpg"
+                    alt=""
+                    class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+                  />
+                
+                  <div class="relative border border-gray-100 p-6" style="background-color:  #F5E0C3;">
+                    <span class="text-white px-3 py-1.5 text-xs font-medium whitespace-nowrap"  style="background-color: #C68E17;"> Recommend </span>
+                
+                    <h3 class="mt-4 text-lg font-medium text-brown" style="color: #4B2E2E;">Machiato</h3>
+                
+                    <p class="mt-1.5 text-sm text-gray-700" style=" color: #4B2E2E;">Rp 16.000</p>
+                
+                    <form class="mt-4">
+                      <button
+                        class="block w-full rounded-sm p-4 text-sm font-medium transition hover:scale-105 text-white" style="background-color: #C68E17;"
+                      >
+                        Add to Cart
+                      </button>
+                    </form>
+                  </div>
+                </a>
+              </li>
+        
+              <li>
+                <a href="#" class="group relative block overflow-hidden">
+                  <button
+                    class="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
+                  >
+                    <span class="sr-only">Wishlist</span>
+                
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </button>
+                
+                  <img
+                    src="https://i.pinimg.com/736x/15/27/5c/15275ca63292934e9ba5c69086729f56.jpg"
+                    alt=""
+                    class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+                  />
+                
+                  <div class="relative border border-gray-100 p-6" style="background-color:  #F5E0C3;">
+                    <span class="text-white px-3 py-1.5 text-xs font-medium whitespace-nowrap"  style="background-color: #C68E17;"> Recommend </span>
+                
+                    <h3 class="mt-4 text-lg font-medium text-brown" style="color: #4B2E2E;"> Morning Latte</h3>
+                
+                    <p class="mt-1.5 text-sm text-gray-700" style=" color: #4B2E2E;">Rp 22.000</p>
+                
+                    <form class="mt-4">
+                      <button
+                        class="block w-full rounded-sm p-4 text-sm font-medium transition hover:scale-105 text-white" style="background-color: #C68E17;"
+                      >
+                        Add to Cart
+                      </button>
+                    </form>
+                  </div>
+                </a>
+              </li>
+        
+              <li>
+                <a href="#" class="group relative block overflow-hidden">
+                  <button
+                    class="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
+                  >
+                    <span class="sr-only">Wishlist</span>
+                
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </button>
+                
+                  <img
+                    src="https://i.pinimg.com/736x/85/85/11/85851111fca1556b7a272dd4d7df2943.jpg"
+                    alt=""
+                    class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+                  />
+                
+                  <div class="relative border border-gray-100 p-6" style="background-color:  #F5E0C3;">
+                    <span class="text-white px-3 py-1.5 text-xs font-medium whitespace-nowrap"  style="background-color: #C68E17;"> Recommend </span>
+                
+                    <h3 class="mt-4 text-lg font-medium text-brown" style="color: #4B2E2E;">Brown Sugar Espresso</h3>
+                
+                    <p class="mt-1.5 text-sm text-gray-700" style=" color: #4B2E2E;">Rp 22.000</p>
+                
+                    <form class="mt-4">
+                      <button
+                        class="block w-full rounded-sm p-4 text-sm font-medium transition hover:scale-105 text-white" style="background-color: #C68E17;"
+                      >
+                        Add to Cart
+                      </button>
+                    </form>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- card Content end -->
+      
+      <!-- Contact   -->
+        <div class="div-contact">
+          <div data-aos="fade-left" class="div-container-contact">
+          <div class="div-img-contact"> 
+            <img src="https://i.pinimg.com/736x/aa/83/25/aa832528231d96c0cf285c464c39ef8d.jpg" alt="" class="img-coffe">
+          </div>
+
+            <div class="div-deskripsi-image">
+              <div class="div-content-contact">
+                <p class="p-title-contactcontent">Apa itu Blaco coffe? </p>
+                <p class="p-deskripsi-contactcontent">Sebuah tempat dimana kita bisa saling bercengkrama , bergaul dan mengutarakan semua ide yang ada , dengan desain yang cozy dan modern , Blaco menjadi salah satu tempat yang sesuai untuk Gen Z, dengan berbagai rekomendasi menu kopi yang enak dan terjangkau , Blaco coffe juga menawarkan berbagai seni yang artistik dan sesuai untuk selera anak muda. </p>
+                <button class="learnmore-contact">
+                  Learn More
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      <!-- Contact end -->
+
+      <!-- input value website -->
+
+        <div class="div-inputvalue">
+          <div class="login-container">
+            <form id="form">
+              <input type="hidden" name="access_key" value="e8a1ab1f-711b-401a-a0c4-0d6d79ae88fa">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Masukkan email anda"required>
+                </div>
+                <div class="input-group">
+                    <label >Ulasan</label>
+                    <input type="text" name="ulasan" required placeholder="Masukkan Ulasan anda">
+                </div>
+                <button type="submit" class="login-btn">Kirim</button>
+              </form>
+        </div>
+        </div>
+      <!-- input value website end -->
+
+      <!-- footers -->
+      <footer class="bg-white">
+        <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+          <div class="flex justify-center text-teal-600">
+            <img src="BLACO.png" class="footer-img">
+          </div>
+      
+          <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+           Jl. Kertajaya No 12 , Surabaya , Indonesia
+          </p>
+      
+          
+      
+          <ul class="mt-12 flex justify-center gap-6 md:gap-8">
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Facebook</span>
+                <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+      
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Instagram</span>
+                <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+      
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Twitter</span>
+                <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  />
+                </svg>
+              </a>
+            </li>
+      
+          </ul>
+        </div>
+      </footer>
+      <!-- footers end -->
+
+      <script>
+        AOS.init();
+      </script>
+      <script src="index.js">
+      </script>
+    </div>
+
+</body>
+</html>
